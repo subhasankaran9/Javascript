@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!-- Create 2 input Field for the two numbers being calulated-->
+    <section class="calculator">
+      <h1>Calculator</h1>
+      <input type="number" id="firstNumber" placeholder="First number" />
+      <input type="number" id="secondNumber" placeholder="Second number" />
+    </section>
+    <p id="error"></p>
+    <section class="container">
+      <!-- Add 4 buttons (add, Subtract, divide, multiple) along with onclick attributes which calls the function -->
+      <button onclick="add()">Add</button>
+      <button onclick="subtract()">Subtract</button>
+      <button onclick="multiple()">Multiple</button>
+      <button onclick="divide()">Divide</button>
+    </section>
+    <!-- Add a paragraph which displays the sum -->
+    <p id="result"></p>
+  </body>
+</html>
